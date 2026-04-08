@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f9f0eb;
+}
+
+#content {
+	width: 880px;
+	height: 550px;
+	font-size: 20px;
+	margin: 50px auto 20px;
+	background-color: aquamarine;
+	background-image: url('../img/bg.png.png');
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#title {
+	width: 50%;
+	padding:6px 10px;
+	margin-left: 325px;
+	text-align: center;
+	border-radius: 50px;
+	color: #fff;
+	position: relative;
+	background-image: linear-gradient(to bottom, #fa0109, #b2090f);
+	border: 1px solid #ffff00;
+	top: 15px;
+}
+
+#lucky-title {
+	width: 270px;
+	line-height: 40px;
+	height: 60px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	color: red;
+	top: 83px;
+	left: 420px;
+	z-index: 100;
+	background-image: url("../img/aBorder.png");
+	background-size: 100% 100%;
+}
+
+.BLOGO {
+	width: 160px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+}
+
+#tip {
+	position: relative;
+	top: 180px;
+	left: 20px;
+	font-size: 30px;
+}
+
+.tip-word {
+	width: 180px;
+	margin: 5px 0;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+
+#stage {
+	color: red;
+	width: 180px;
+	padding: 5px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 10px;
+	background-image: url('../img/sBorder.png');
+	background-size: 100% 100%;
+}
+
+#lucky {
+	height: 412px;
+	width: 600px;
+	position: relative;
+	left: 250px;
+	top: -218px;
+	background-image: url("../img/cBoreder.png");
+	background-size: 100% 100%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-evenly;
+}
+
+.lucky-row {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.img {
+	width: 80px;
+	height: 80px;
+}
+
+.attr {
+	height: 50px;
+	line-height: 50px;
+}
+
+.number {
+	width: 50px;
+	height: 50px;
+	margin: 10px 0;
+	line-height: 50px;
+	text-align: center;
+	background-image: url('../img/red.png');
+	background-size: 100% 100%;
+}
+
+#control {
+	width: 880px;
+	margin: 0 auto 30px;
+}
+
+.con-tip {
+	padding: 0 5px;
+}
+
+.con-line {
+	
+	margin: 10px 0;
+
+}
+
+.btn {
+	width: 110px;
+	height: 25px;
+	margin: 15px 0 0 15px;
+}
+
+#sure-lucky {
+	width: 60px;
+	height: 20px;
+}
+.mark{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	color: red;
+	left: 0;
+}
+
+/* 隐藏两个按钮 */
+.hidden {
+    display: none;
+}
