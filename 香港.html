@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>香港——精准内幕</title>
+		<link href="css/core.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/core.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<!-- 核心标题 -->
+			<div id="title"  contenteditable="true"><span id="grade">初级</span><span id="type-title">独家香港六合彩</span><span id="grade-tip">内部资料</span></div>
+			<!-- 推荐标题 -->
+			<div id="lucky-title">防伪码为：</div>
+			<!-- tubiao -->
+			<img class="BLOGO" id="xglogo" src="./img/xglogo.png" alt="" />
+			<img class="BLOGO" id="amlogo" src="./img/amlogo.png" alt="" style="display: none;" />
+			<!-- 推荐期数 -->
+			<div id="tip">
+				<div class="tip-word" id="type-logo">香港六合彩</div>
+				<div id="stage"><span id="lucky-stage">202236</span><span>期</span></div>
+				<div class="tip-word">官 方 内 部</div>
+				<div class="tip-word">值 得 信 赖</div>
+				<div id="stage">认准防伪</div>
+			</div>
+			<!-- 推荐栏目 -->
+			<div id="lucky">
+				<div class="lucky-row" id="lucky-row-1">
+					<img class="img" id="img1" src="img/attr_mouse.png" alt="">
+					<div class="attr" id="attr1">鼠</div>
+					<div class="number" id="num1">0</div>
+					<div class="number" id="num6">0</div>
+				</div>
+				<div class="lucky-row" id="lucky-row-2">
+					<img class="img" id="img2" src="img/attr_mouse.png" alt="">
+					<div class="attr" id="attr2">鼠</div>
+					<div class="number" id="num2">0</div>
+					<div class="number" id="num7">0</div>
+				</div>
+				<div class="lucky-row" id="lucky-row-3">
+					<img class="img" id="img3" src="img/attr_mouse.png" alt="">
+					<div class="attr" id="attr3">鼠</div>
+					<div class="number" id="num3">0</div>
+					<div class="number" id="num8">0</div>
+				</div>
+				<div class="lucky-row" id="lucky-row-4">
+					<img class="img" id="img4" src="img/attr_mouse.png" alt="">
+					<div class="attr" id="attr4">鼠</div>
+					<div class="number" id="num4">0</div>
+					<div class="number" id="num9">0</div>
+				</div>
+				<div class="lucky-row" id="lucky-row-5">
+					<img class="img" id="img5" src="img/attr_mouse.png" alt="">
+					<div class="attr" id="attr5">鼠</div>
+					<div class="number" id="num5">0</div>
+					<div class="number" id="num10">0</div>
+				</div>
+				<div class="mark" contenteditable="true">声明：本资料为独家资料 如遇防伪码不同皆为假冒</div>
+			</div>
+		</div>
+		
+		<!-- 控制器 -->
+		<div id="control">
+			<!-- 推荐类型 -->
+			<div class="con-line">
+				<span class="con-tip">推荐类型:</span>
+				<select id="lucky-type">
+					<option value="1">精准推荐5肖10码</option>
+					<option value="2">精准推荐2肖4码</option>
+				</select>
+				<!-- 确定按钮 -->
+				<button id="sure-lucky">确定</button>
+			</div>
+
+			<!-- 防伪码设置 -->
+			<div class="con-line">
+				<span class="con-tip">防伪设定:</span>
+				<input type="text" id="in-fwm">
+			</div>
+
+			<!-- 彩种类型 -->
+			<div class="con-line hidden">
+				<span class="con-tip">彩种类型:</span>
+				<select id="in-type">
+					<option value="1">香港</option>
+					<option value="2">澳门</option>
+				</select>
+				<span class="con-tip">等级:</span>
+				<select id="in-grade">
+					<option value="1">初级</option>
+					<option value="2">高级</option>
+				</select>
+			</div>
+			<!-- 期数输入 -->
+			<div class="con-line">
+				<span class="con-tip">推荐期数:</span>
+				<input type="text" id="in-stage">
+			</div>
+			<!-- 推荐生肖 -->
+			<div class="con-line">
+				<span class="con-tip">推荐生肖:</span>
+				<select class="diy-select" id="in-attr1"></select>
+				<select class="diy-select" id="in-attr2"></select>
+				<select class="diy-select" id="in-attr3"></select>
+				<select class="diy-select" id="in-attr4"></select>
+				<select class="diy-select" id="in-attr5"></select>
+			</div>
+			<!-- 推荐号码 -->
+			<div class="con-line">
+				<span class="con-tip">推荐号码:</span>
+				<input type="number" min="1" max="49" id="in-num1" />
+				<input type="number" min="1" max="49" id="in-num2" />
+				<input type="number" min="1" max="49" id="in-num3" />
+				<input type="number" min="1" max="49" id="in-num4" />
+				<input type="number" min="1" max="49" id="in-num5" />
+			</div>
+			<div class="con-line" id="con-line-2">
+				<span class="con-tip">推荐号码:</span>
+				<input type="number" min="1" max="49" id="in-num6" />
+				<input type="number" min="1" max="49" id="in-num7" />
+				<input type="number" min="1" max="49" id="in-num8" />
+				<input type="number" min="1" max="49" id="in-num9" />
+				<input type="number" min="1" max="49" id="in-num10" />
+				<!-- 确定按钮 -->
+				<button class="btn" id="sure">确定修改</button>
+			</div>
+		</div>
+	</body>
+</html>
